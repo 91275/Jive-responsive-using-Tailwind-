@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes logoScroll {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  .animate-logo-scroll {
+    animation: logoScroll 20s linear infinite;
+  }
+}
