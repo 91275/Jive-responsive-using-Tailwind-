@@ -4,660 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./dist/output.css" rel="stylesheet">
     <title>Document</title>
-
-<!-- <style>
-    @keyframes logoScroll {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-.scroll-animation {
-  animation: logoScroll 12s linear infinite;
-}
-</style> -->
-
+    <link href="./dist/output.css" rel="stylesheet" />
 </head>
 
-<body>
-    <nav class="w-full backdrop-blur sticky top-0 ">
-        <div class=" flex justify-between p-3  border-b-2 border-slate-100  lg:pl-6 lg:pr-6 ">
+<body style="background-image: url(assets/asset4.svg);" class="">
 
-            <div class="flex items-center text-[1.1rem] gap-2 font-bold ">
+    <!-- navbar -->
+    <nav class="">
 
-                <!-- logo  -->
-                <div>
-                    <img src="new project/logo-1.c29b748.png" class="h-12 ">
-                </div>
+        <!-- nav div -->
+        <div class=" p-4  flex justify-between relative ">
 
-                <!-- logo attached links in large screen -->
-                <div class="hidden sm:flex sm:gap-3">
-                    <a href="#">For teams</a>
-                    <a href="#">Examples</a>
-                    <a href="#">Pricing</a>
-                </div>
-
-
+            <!-- login div -->
+            <div class="bg-white border-2 border-gray-100 rounded-full w-20 h-10 text-center py text-[15px]  font-stretch-50% flex items-center justify-center  hover:bg-amber-300  hover:border-amber-300 sm:absolute sm:right-[120px] sm:w-24 sm:h-12 ">
+                <a href="#"> Login</a>
             </div>
-            <!-- both are in left side and end here -->
 
-            <!-- right side stuffs here  -->
-            <div class="flex justify-center items-center gap-3 cursor-auto">
-
-                <!-- three links for large screen on right side  -->
-
-                <div class="lg:flex hidden">
-                    <p>Headshot</p>
-                    <img src="new project/svg+xml;base64,PHN2ZyBkYXRhLXYtMmJjMTUwY2E9IiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3V.svg"
-                        alt="img" class="h-6 opacity-[0.5]">
-                </div>
-
-                <div class="hidden lg:flex">
-                    <p>Blog</p>
-
-                </div>
-
-                <div class="lg:flex  hidden">
-                    <p>Tools</p>
-                    <img src="new project/svg+xml;base64,PHN2ZyBkYXRhLXYtMmJjMTUwY2E9IiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3V.svg"
-                        alt="img" class="h-6 opacity-[0.5]">
-                </div>
-
-
-                <!-- EN/INR and browser bar for meidum and larger screen   -->
-                <div
-                    class="flex items-center h-[41px] w-[55px] border-2 border-slate-200 rounded-[5px] sm:w-[83px] sm:h-10 sm:p-1 ">
-
-                    <div class="sm:hidden ">
-                        <img src="new project/svg+xml;base64,PHN2ZyBkYXRhLXYtMmJjMTUwY2E9IiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgY2xhc3M9InNpemUtNiB3LTQ.svg"
-                            alt="img" class="h-6 opacity-[0.5]">
-                    </div>
-
-                    <div class="hidden sm:flex sm:text-[0.9rem] ">
-                        <p>EN/INR</p>
-                    </div>
-                    <div>
-                        <img src="new project/svg+xml;base64,PHN2ZyBkYXRhLXYtMmJjMTUwY2E9IiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3V.svg"
-                            alt="img" class="h-6 opacity-[0.5]">
-                    </div>
-
-                </div>
-
-                <!-- login and get your headshot button on right side in navbar -->
-
-                <div
-                    class="h-8 w-18 border-0 text-center rounded-[7px] text-[0.9rem] pt-1 bg-gray-200 hover:bg-gray-300 cursor-pointer text-gray-500 font-medium hidden lg:flex lg:justify-center lg:items-center lg:pb-1.5">
-                    <button>Login</button>
-                </div>
-
-                <div
-                    class="h-8 w-[168px] border-0 text-center rounded-[7px] text-[0.9rem] pt-1 bg-black text-white font-bold hidden lg:flex lg:justify-center lg:items-center lg:pb-1.5 ">
-                    <button class="">Get Your HeadShot</button>
-                </div>
-
-                <!-- menu bar on small and medium screen  -->
-                <div class="text-4xl text-slate-500 mb-2 lg:hidden" id="menu-btn">
-                    &#8801;
-                </div>
-
-
+            <!-- logo img -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 ">
+                <img src="assets/asset 0.svg" alt="img" class="h-10">
             </div>
+
+            <!-- sign up button -->
+            <div class="sm:fixed sm:right-0">
+                <a href="#"
+                    class="bg-black  rounded-full w-24 h-12  p-3 text-[15px]  font-stretch-50%  text-white flex items-center justify-center hover:bg-blue-400 ">
+                    Sign up</a>
+            </div>
+
         </div>
     </nav>
-    <div id="mobile-menu" class="hidden flex flex-col gap-4 p-4 bg-white border-b">
-        <a href="#">For teams</a>
-        <a href="#">Examples</a>
-        <a href="#">Pricing</a>
-        <a href="#">Headshot</a>
-        <a href="#">Blog</a>
-        <a href="#">Tools</a>
-        <a href="#">Login</a>
-        <button class="bg-black text-white p-2 rounded">Get Your Headshot</button>
-    </div>
 
 
-    <!-- five star bar -->
-    <div class=" flex justify-center items-center ">
-        <div class=" h-10 bg-green-100 mt-10 w-auto rounded-[10px] flex items-center gap-3 p-2">
+    <!-- main section -->
 
-            <!-- five star img  -->
-            <img src="new project/trustpilot-stars-5.64883a0.svg" alt="img" class="h-[22px]  ">
+    <main>
 
-            <!-- text after five star  -->
-            <p class="hidden sm:flex text-h tracking-wide ">Rated <span class="font-bold">4.8</span> out of 5 with <span
-                    class="font-bold ">3,143</span> reviews on</p>
-            <p class="font-bold sm:hidden">3,143</p>
+        <!-- first section -->
+        <div class= "flex flex-col justify-around items-center  text-center pt-10 pb-8 pl-7 pr-7 gap-10 sm:justify-between ">
 
-            <!-- truspilot logo -->
-            <img src="new project/logo-trustpilot.740aa8a.png" alt="img" class="h-[22px]">
+            <!-- heading -->
+            <div>
+                <div class="text-5xl font-bold sm:w-[566px]  md:text-7xl ">Don’t make connecting awkward</div>
+            </div>
+
+            <!-- paragraph -->
+            <div class="text-[18px] text-gray-500 sm:w-[560px]">No more fumbling for business cards or searching for lost contacts
+                after an event. Jive makes it easy
+                to exchange info and keep the conversation going straight from your inbox.</div>
+
+
+            <!-- sign up free button    -->
+            <div >
+                <a href="#"
+                    class="bg-black   rounded-full w-[220px] h-[60px]  p-3 text-[21px] font-bold font-stretch-50%  text-white flex items-center justify-center hover:bg-blue-400  ">
+                    Sign up free</a>
+            </div>
 
         </div>
-    </div>
 
-    <!-- header heading with paragraphs -->
-    <div class="flex flex-col justify-center items-center mt-4">
-
-        <div class="h-auto w-[95%] text-center sm:h-[110px] sm:w-[620px]">
-            <h1 class="text-4xl font-bold  ">Professional business headshots, without a physical photo shoot</h1>
+        <!-- phone image -->
+        <div class="sm:flex sm:justify-center sm:items-center">
+            <img src="assets/asset 5.png" alt="img" class="mb-4 sm:w-[786px] ">
         </div>
 
+        <!-- middle section -->
+        <divc class="  p-7 flex flex-col items-center text-center gap-4">
+            <div >
+                <h1 class="text-4xl font-bold ">Here’s how it works</h1>
+            </div>
+            <div>
+                <p class="text-[18px] text-gray-500  md:mb-10 ">More jiving, less shucking.</p>
+            </div>
+
+            <!-- grid containers -->
+            <div class="grid place-items-center   gap-4 grid-cols-1 grid-rows-3  sm:grid-cols-2 sm:grid-rows-2 sm:gap-5 sm:mb-8 sm:justify-self-center  lg:grid-cols-3 lg:grid-rows-1 lg:place-content-center  ">
+                <div class="w-[310px]  " >
+                    <img src="assets/asset 6.svg" alt="img" class="  ml-[131px] mr-[131px] mt-3 mb-4 ">
+                    <h1 class="text-[26px] font-bold ">Scan the QR code</h1>
+                    <p class="text-[18px] text-gray-500">When it’s time to swap info, have your new contact scan your QR code with their phone camera.</p>
+                </div>
+                <div class="w-[310px]   ">
+                   
+                    <img src="assets/asset 7.svg" alt="img" class="ml-[131px] mr-[131px] mb-4 ">
+                   
+                    <h1 class="text-[26px] font-bold " >Send a message</h1>
+                    <p class="text-[18px] text-gray-500" >When it’s time to swap info, have your new contact scan your QR code with their phone camera.</p>
+                </div>
+                <div class="w-[310px]   sm:col-span-2  sm:justify-self-center  lg:col-span-1 lg:justify-self-auto">
+                    <img src="assets/asset 8.svg" alt="img" class="ml-[131px] mr-[131px] mb-4  ">
+                    <h1 class="text-[26px] font-bold " >Follow-up from your inbox</h1>
+                    <p class="text-[18px] text-gray-500" >When it’s time to swap info, have your new contact scan your QR code with their phone camera.</p>
+                </div>
+            </div>
+            <div>
+                <a href="#"
+                    class="bg-black   rounded-full w-[220px] h-[60px]  p-3 text-[21px] font-bold font-stretch-50%  text-white flex items-center justify-center hover:bg-blue-400  ">
+                    Start Jiving</a>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="flex items-center flex-col gap-5 p-5 ">
         <div>
-            <p class="mt-4 text-gray-500 font-medium ">The #1 AI Headshot Generator for Professional Headshots</p>
+            <img src="assets/asset 0.svg" class="mt-2 h-10 ">
         </div>
-
-        <div class="mt-2 h-auto w-[95%] sm:w-[770px] md:h-[60px] text-center">
-            <p class="text-[1.1rem]">Get professional business headshots in minutes with our AI headshot generator.
-                Upload photos, pick your styles & receive 80+ headshots.<span class="font-bold "> All we need are a few
-                    selfies.</span></p>
+        <div>
+            <p class="text-[17px] text-gray-500">Get connected and start jiving.</p>
         </div>
-    </div>
-
-    <!-- create headshot and view package button   -->
-    <div class="p-4 sm:flex gap-4 sm: sm:items-center sm:justify-center">
-
-        <div
-            class="w-full font-bold text-white bg-orange-600 p-2 text-center  rounded-md mb-4 sm:max-w-fit sm:pl-4 sm:pr-4">
-            <button>Create your headshots <a href="#">&#8594</a></button>
+        <div class="flex justify-around gap-3 ">
+            <a href="#">About</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">contact</a>
         </div>
-
-        <div class="hidden sm:flex  mb-2 text-gray-500 ">
-            OR
+        <div>
+            <p class="text-[14px] text-gray-500 mb-6 ">© 2025 Jive by Plain Sight Ventures</p>
         </div>
-
-        <div
-            class="w-full font-bold  bg-white border-2 border-gray-200 p-2 text-center  rounded-md  sm:max-w-fit sm:pl-4 sm:pr-8">
-            <button>View team packages</button>
-        </div>
-    </div>
-
-
-    <!-- animate photos  -->
-    <div class="relative overflow-hidden ">
-        <div class=" flex flex-row gap-3 mt-6 justify-center items-center animate-logo-scroll">
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/97c37ceb-d270-43c2-81f7-e1af918e264d.jpeg&exp=1763914267&sig=K42-VCxNASzPejX_pGS0vNlkS78frwMv9rhky77CGEk.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/18b9c10e-d685-4923-b2aa-7bc7819a2169.jpeg&exp=1764062216&sig=PW5s-dmAITdM-iNPo1Bgo3OHBUhlF0anw_qL2pY3UDY.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/7309a3b9-83e5-4b26-b928-092e08c5263e.jpeg&exp=1764062216&sig=6myFJQdcb8x8dCjqhrFThRbzF6o0oS6PM9O9ZpOYPqE.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/69961333-201d-44dd-a92b-6bccfd71b59e.jpeg&exp=1764062216&sig=lxEtl75EW3Wel6p-1c2nkjRSUE29JXbwH7O4TSqcBXM.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/bb45299e-3f0a-48ae-b210-d07654de346c.jpeg&exp=1764062216&sig=cSvF-b0H8tnmGLsI9-GM8XcPPTwHLOFAaZVcNy2xFXY.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-
-
-            <!-- duplicate photos  -->
-             <div class="relative shrink-0 group w-fit">
-                <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/97c37ceb-d270-43c2-81f7-e1af918e264d.jpeg&exp=1763914267&sig=K42-VCxNASzPejX_pGS0vNlkS78frwMv9rhky77CGEk.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/18b9c10e-d685-4923-b2aa-7bc7819a2169.jpeg&exp=1764062216&sig=PW5s-dmAITdM-iNPo1Bgo3OHBUhlF0anw_qL2pY3UDY.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/7309a3b9-83e5-4b26-b928-092e08c5263e.jpeg&exp=1764062216&sig=6myFJQdcb8x8dCjqhrFThRbzF6o0oS6PM9O9ZpOYPqE.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/69961333-201d-44dd-a92b-6bccfd71b59e.jpeg&exp=1764062216&sig=lxEtl75EW3Wel6p-1c2nkjRSUE29JXbwH7O4TSqcBXM.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/bb45299e-3f0a-48ae-b210-d07654de346c.jpeg&exp=1764062216&sig=cSvF-b0H8tnmGLsI9-GM8XcPPTwHLOFAaZVcNy2xFXY.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-            <div class="relative shrink-0 group w-fit">
-                <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                    class="h-[200px] w-[200px] border-2 border-gray-200 rounded-[10px] object-cover">
-
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-[10px]  flex justify-center items-center text-white font-medium">
-                    View More
-
-                </div>
-                <div class="">
-                    <img src="new project/0db51113-3cee-45cd-b7e8-5327beaff234.jpeg&exp=1763914267&sig=kemWRgRm3MAQugyadCQ5iqBSBzMXhoiP-r-OyKqJRZQ.png"
-                        alt="img"
-                        class="h-[50px] border-4 rounded-[10px] border-white absolute top-2 left-2 group-hover:h-[70px] group-hover:top-[-5px] group-hover:left-0 group-hover:ease-in-out group-hover:duration-600 ">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- animate photo end here  -->
-
-    <!-- 18M paragraph hidden in large and medium screen  -->
-    <div class="mt-6 mb-4  flex justify-center items-center text-slate-500 text-[0.9rem] sm:hidden">
-        <p class=""><span class="font-bold">18M</span>
-            headshots created for
-            <span class="font-bold">196,987+</span>
-            happy customers
-        </p>
-    </div>
-    <!-- logo section  -->
-    <div class="relative">
-        <div class="bg-linear-to-t from-gray-300 via-white to bg-white h-40">
-            <div class="flex justify-center items-center mt-4 md:mt-0 ">
-               <div class="flex h-[41px] w-[70%] gap-3 overflow-hidden">
-
-    <!-- MOVING WRAPPER (added) -->
-    <div class="flex gap-3 animate-logo-scroll">
-
-        <!-- YOUR ORIGINAL LOGOS (unchanged) -->
-        <img src="new project/logo-2.1cf8a64.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-1.c29b748.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-3.5588fdb.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-4.0d6d3bc.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-5.793a4b1.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-4.0d6d3bc.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-7.b452db2.png" alt="img" class="h-[30px]">
-
-        <!-- DUPLICATED (for seamless loop) -->
-        <img src="new project/logo-2.1cf8a64.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-1.c29b748.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-3.5588fdb.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-4.0d6d3bc.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-5.793a4b1.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-4.0d6d3bc.png" alt="img" class="h-[30px]">
-        <img src="new project/logo-7.b452db2.png" alt="img" class="h-[30px]">
-
-    </div>
-</div>
-
-            </div>
-        </div>
-        <div class="hidden sm:flex">
-            <div class="w-full flex justify-evenly h-[250px] bg-[#E0FAFA] items-center text-lg/7 ">
-                <ul class="mt-4  ">
-                    <li class="font-bold">All photoshoots include:</li>
-                    <li> <span class="font-extrabold">&#10003;</span> in 2 hours or less</li>
-                    <li> <span class="font-extrabold">&#10003;</span> in 2 hours or less</li>
-                    <li> <span class="font-extrabold">&#10003;</span> Hundreds of results to choose from</li>
-                </ul>
-
-                <img src="new project/logo-1.c29b748.png" alt="img" class="h-[50px] mt-4 ">
-                <ul class="mt-4 ">
-                    <li class="font-bold">Every package includes:</li>
-                    <li> <span class="font-extrabold">&#10003;</span> Indistinguishable from real photo</li>
-                    <li> <span class="font-extrabold">&#10003;</span> Business expense-ready invoice</li>
-                    <li> <span class="font-extrabold">&#10003;</span> Discounts up to 60% for teams</li>
-                </ul>
-            </div>
-        </div>
-        <div class="flex  items-center justify-center absolute top-[135px] w-full ">
-            <div class="h-14 w-[90%] bg-white flex justify-center items-center rounded border-2 border-[#E0FAFA]">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, eos?</p>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Frequently asked questions -->
-
-    <div class="mt-14 items-center ">
-        <h1 class="text-[2.4rem] font-semibold text-center ">Frequently Asked Questions</h1>
-        <div class="flex items-center justify-center ">
-            <p class="text-center w-[80%] text-[1.2rem] text-gray-500 mt-3 ">Answers to common questions about our
-                professional AI generated headshot service for individuals and remote teams.</p>
-        </div>
-    </div>
-    <div class="flex justify-center items-center mb-14 ">
-        <div class="mt-6 grid justify-between gap-5 grid-cols-1 sm:grid-cols-2 w-[90%]">
-
-            <div class="border border-gray-300 rounded text-gray-500 flex-col p-4 faq-box">
-                <div class="flex items-center justify-between gap-4 cursor-pointer faq-header">
-                    <p class="text-[1.1rem]">What if I don't like my AI headshots?</p>
-                    <span class="text-[2.1rem] font-light faq-icon">+</span>
-                </div>
-
-                <hr class="text-gray-300 w-[95%] hidden faq-line mt-1 mb-1">
-
-                <div class="items-center gap-4 pl-2 pr-2 hidden faq-content">
-                    <p class="text-gray-400">
-                        You own your AI photos. We grant you full commercial license and ownership over your photos.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="border border-gray-300 rounded text-gray-500 flex-col p-4 faq-box">
-                <div class="flex items-center justify-between gap-4 cursor-pointer faq-header">
-                    <p class="text-[1.1rem]">What do you do with my uploaded photos?</p>
-                    <span class="text-[2.1rem] font-light faq-icon">+</span>
-                </div>
-
-                <hr class="text-gray-300 w-[95%] hidden faq-line mt-1 mb-1">
-
-                <div class="items-center gap-4 pl-2 pr-2 hidden faq-content">
-                    <p class="text-gray-400">
-                        The photos you upload are used to teach the AI what "you" look like so it can create realistic
-                        photos of you. Your photos are never used to improve our model or contribute to another person's
-                        photos.
-                    </p>
-                </div>
-            </div>
-
-            <div class="border border-gray-300 rounded text-gray-500 flex-col p-4 faq-box">
-                <div class="flex items-center justify-between gap-4 cursor-pointer faq-header">
-                    <p class="text-[1.1rem]">Who owns my AI photos?</p>
-                    <span class="text-[2.1rem] font-light faq-icon">+</span>
-                </div>
-
-                <hr class="text-gray-300 w-[95%] hidden faq-line mt-1 mb-1">
-
-                <div class="items-center gap-4 pl-2 pr-2 hidden faq-content">
-                    <p class="text-gray-400">
-                        You own your AI photos. We grant you full commercial license and ownership over your photos.
-                    </p>
-                </div>
-            </div>
-
-            <div class="border border-gray-300 rounded text-gray-500 flex-col p-4 faq-box">
-                <div class="flex items-center justify-between gap-4 cursor-pointer faq-header">
-                    <p class="text-[1.1rem]">How long does an AI headshot take?</p>
-                    <span class="text-[2.1rem] font-light faq-icon">+</span>
-                </div>
-
-                <hr class="text-gray-300 w-[95%] hidden faq-line mt-1 mb-1">
-
-                <div class="items-center gap-4 pl-2 pr-2 hidden faq-content">
-                    <p class="text-gray-400">
-                        HeadshotPro delivers same-day AI headshots. The exact turnaround time can range from 1 to 3
-                        hours. We're not the fastest, but we don't cut corners when it comes to generating
-                        photorealistic AI headshots.
-                    </p>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    <!-- footer section  -->
-
-    <footer class="bg-black w-full  ">
-        <div class="pl-4 pr-4 pt-10 flex justify-between lg:w-[90%] lg:items-center lg:justify-center lg:gap-48 mb-8 ">
-            <div class=" ">
-                <div class="pb-5 ">
-                    <img src="new project/logo-1.c29b748.png "
-                        class="h-10 invert brightness-30 hue-rotate-180 ml-[-11px]">
-                    <p class="text-white font-medium  text-[1.3rem]">Create professional business headshots in minutes
-                        with
-                        HeadshotPro</p>
-                </div>
-                <div class="flex flex-wrap gap-4">
-
-                    <div class="flex gap-4 pb-4 ">
-                        <img src="new project/trustpilot-stars-5.64883a0.svg" class="h-[25px]">
-
-                        <img src="new project/logo-trustpilot.740aa8a.png"
-                            class="h-[25px] invert brightness-80 hue-rotate-180 ">
-                    </div>
-                    <div class="flex  items-center gap-4">
-                        <div class="flex">
-                            <img src="new project/7309a3b9-83e5-4b26-b928-092e08c5263e.jpeg&exp=1764062216&sig=6myFJQdcb8x8dCjqhrFThRbzF6o0oS6PM9O9ZpOYPqE.png"
-                                class="h-[22px] rounded-2xl ">
-                            <img src="new project/97c37ceb-d270-43c2-81f7-e1af918e264d.jpeg&exp=1763914267&sig=K42-VCxNASzPejX_pGS0vNlkS78frwMv9rhky77CGEk.png"
-                                class="h-[22px] rounded-2xl -ml-1.5">
-                            <img src="new project/18b9c10e-d685-4923-b2aa-7bc7819a2169.jpeg&exp=1764062216&sig=PW5s-dmAITdM-iNPo1Bgo3OHBUhlF0anw_qL2pY3UDY.png"
-                                class="h-[22px] rounded-2xl -ml-1.5 ">
-                        </div>
-                        <div>
-                            <p class="text-white font-medium">Trusted by <b>196,987+ </b>happy customers</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="text-center border-2 border-white rounded h-[140px] w-[120px]">
-                <img src="new project/logo-7.b452db2.png" class="h-[30px] pl-2">
-                <h1 class="text-white font-bold ">lorem </h1>
-                <p class="text-white font-medium">Lorem ipsum dolor sit.</p>
-            </div>
-        </div>
-        </div>
-        <div class="flex items-center justify-center">
-            <hr class="text-gray-600 w-[95%]  ">
-        </div>
-        <!-- <div class="lg:w-[80%] lg:flex lg:items-center lg:justify-center  "> -->
-        <div
-            class="text-white grid  grid-cols-2 p-6 gap-5 sm:grid-cols-3 lg:grid-cols-5 w-full lg:w-[90%] lg:flex lg:items-center lg:justify-center lg:gap-30   ">
-            <div>
-                <ul class="text-base/7 ">
-                    <li class="font-bold ">Links</li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                </ul>
-            </div>
-            <div>
-                <ul class="text-base/7">
-                    <li class="font-bold ">Support</li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                </ul>
-            </div>
-            <div>
-                <ul class="text-base/7">
-                    <li class="font-bold ">Legal</li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                </ul>
-            </div>
-            <div>
-                <ul class="text-base/7">
-                    <li class="font-bold ">Free Tools</li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                </ul>
-            </div>
-            <div>
-                <ul class="text-base/7">
-                    <li class="font-bold ">Language</li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                    <li>lorem ipsum </li>
-                </ul>
-            </div>
-        </div>
-        </div>
-        <div class="flex items-center justify-center">
-            <hr class="text-gray-600 w-[95%]  ">
-        </div>
-        <div class="text-white font-medium mt-8  ml-6 pb-8 ">
-            <p>© 2021 - 2025, All Rights Reserved</p>
         </div>
     </footer>
 
-    <div class="fixed right-4 bottom-4 ">
-        <img src="new project/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idy04IGgtOCB0ZXh0LXdoaXRlIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOCA1djhhMiAyIDA.svg"
-            class="invert  bg-orange-400 h-[45px] rounded-2xl p-2 ">
-        <!-- <div class="absolute bg-blue-400 inset-0 opacity-90 "></div> -->
-    </div>
-
-
-    <!-- script  -->
-    <script>
-        const menuBtn = document.getElementById("menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
-
-
-
-
-        const faqBoxes = document.querySelectorAll(".faq-box");
-
-        faqBoxes.forEach(box => {
-            const header = box.querySelector(".faq-header");
-            const content = box.querySelector(".faq-content");
-            const line = box.querySelector(".faq-line");
-            const icon = box.querySelector(".faq-icon");
-
-            header.addEventListener("click", () => {
-
-                // Toggle content
-                content.classList.toggle("hidden");
-                line.classList.toggle("hidden");
-
-                // Toggle + and –
-                icon.textContent = icon.textContent === "+" ? "−" : "+";
-            });
-        });
-
-
-
-
-    </script>
 
 </body>
 
